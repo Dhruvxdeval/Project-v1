@@ -1,0 +1,669 @@
+PROJECT SPEC V1
+
+1. Product Goal
+
+2. Target User
+
+3. MVP Scope
+
+4. Five Forms
+
+5. Input Schema
+
+6. AI Rules
+
+7. Path Diversity Rules
+
+8. Output Schema
+
+9. Frontend Requirements
+
+10. Backend Requirements
+
+11. Progress System
+
+12. Out of Scope
+
+.
+.
+.
+
+# 5-FORM INTAKE — MVP SPECIFICATION V1
+
+## Product Goal
+
+The product helps a Class 12 / recently passed Class 12 PCM student understand realistic routes from their current situation toward a chosen career destination.
+
+The experience should answer:
+
+> **“Where am I now, where do I want to go, and what realistic routes can take me there?”**
+
+The product should ultimately move the student through:
+
+**Understand → Compare → Choose → Execute → Progress**
+
+---
+
+# MVP TARGET USER
+
+**Primary user:**
+
+Indian Class 12 / recently passed Class 12 PCM student, typically 17–20 years old, who:
+
+* has a career goal or career area in mind,
+* is unsure about the best educational/skill route,
+* may not know which degree/branch/skill combination fits their situation,
+* wants practical next steps rather than only general career advice.
+
+### Important
+
+MVP supports **PCM deeply**.
+
+The underlying data structure should NOT permanently hard-code PCM so that PCB, Commerce, Humanities, etc. can be added later.
+
+---
+
+# FORM 1 — PAST
+
+### Purpose
+
+Understand the student's academic background and previous exposure.
+
+### Question 1 — What subjects/background have you studied?
+
+For MVP:
+
+* Physics
+* Chemistry
+* Mathematics
+
+This can be presented as a confirmation because the MVP is PCM-focused.
+
+### Question 2 — Which subjects do you currently feel strongest in?
+
+**Multi-select**
+
+Options:
+
+* Mathematics
+* Physics
+* Chemistry
+* Computer/Programming
+* None specifically
+* Other
+
+### Question 3 — How would you describe your academic performance overall?
+
+Options:
+
+* Strong
+* Above average
+* Average
+* Currently struggling
+* Prefer not to say
+
+### Question 4 — Have you already attempted or prepared for any entrance examinations?
+
+Options:
+
+* JEE
+* Other engineering entrance
+* Multiple entrance exams
+* Not attempted
+* Prefer not to say
+
+### What AI learns from Form 1
+
+* Academic foundation
+* Subject strengths
+* Possible academic routes
+* Current preparation level
+* Whether the student may need foundation/bridge work
+
+### Important design rule
+
+Do NOT make marks the main identity of the student.
+
+Marks are context, not destiny.
+
+---
+
+# FORM 2 — PRESENT
+
+### Purpose
+
+Understand who the student is currently — interests, preferences, strengths and activities.
+
+### Question 1 — What activities genuinely interest you?
+
+**Multi-select**
+
+Examples:
+
+* Coding / programming
+* Mathematics / problem solving
+* Building things / projects
+* Research / experimentation
+* Business / entrepreneurship
+* Finance / numbers
+* Design / creativity
+* Writing / communication
+* Teaching / helping others
+* Gaming / technology
+* Other
+
+### Question 2 — What type of work do you enjoy most?
+
+Options:
+
+* Solving difficult problems
+* Building things
+* Analysing data/information
+* Creating/designing
+* Researching and discovering
+* Working with people
+* Organising/leading
+* Not sure yet
+
+### Question 3 — Which statement describes you best?
+
+Options:
+
+* I like learning deeply before applying things.
+* I learn best by building things.
+* I prefer practical problem solving.
+* I like experimenting and trying different things.
+* I am still figuring out how I learn best.
+
+### Question 4 — What are you currently doing outside school/college?
+
+**Multi-select**
+
+* Coding
+* Online courses
+* Projects
+* Competitions/hackathons
+* Sports
+* Content creation
+* Reading/research
+* Nothing consistently yet
+* Other
+
+### What AI learns from Form 2
+
+* Interests
+* Work preferences
+* Learning style
+* Existing activities
+* Potential alignment between interests and career destination
+
+### Important
+
+These are **self-reported preferences**, not psychological/aptitude test results.
+
+The AI must not treat them as scientifically measured traits.
+
+---
+
+# FORM 3 — CURRENT SITUATION & CONSTRAINTS
+
+### Purpose
+
+Understand the student's actual starting position and constraints.
+
+This form is extremely important because two students with the same goal may need completely different routes.
+
+### Question 1 — What is your current college situation?
+
+Options:
+
+* College/degree already decided
+* Have shortlisted options
+* Still comparing options
+* Haven't started deciding yet
+
+### Question 2 — What is your approximate education budget preference?
+
+Options:
+
+* Prefer low-cost options
+* Moderate budget
+* Higher-cost options are possible
+* Not sure / need guidance
+* Prefer not to say
+
+Do NOT force exact family-income disclosure.
+
+### Question 3 — Are you willing to relocate for education?
+
+Options:
+
+* Yes, anywhere in India
+* Yes, but preferably certain cities/regions
+* Prefer to stay near home
+* Not sure
+
+### Question 4 — What is your current priority?
+
+Choose up to 2:
+
+* Affordable education
+* Strong college brand/reputation
+* Strong technical skills
+* Early internships/job opportunities
+* Research opportunities
+* Flexibility to explore
+* Entrepreneurship/building
+* Higher studies
+* Work-life/location considerations
+
+### Question 5 — How much time can you realistically spend each week on additional career preparation?
+
+Options:
+
+* Less than 3 hours
+* 3–5 hours
+* 5–10 hours
+* 10+ hours
+* Not sure
+
+### What AI learns from Form 3
+
+* Starting position
+* Financial constraints
+* Location constraints
+* Time availability
+* Student priorities
+* Education decision status
+
+### Critical rule
+
+The AI must NOT recommend a path requiring resources that clearly conflict with the student's stated constraints unless it explicitly labels that route as requiring a change in those constraints.
+
+---
+
+# FORM 4 — DESTINATION / GOAL
+
+### Purpose
+
+Understand where the student wants to go.
+
+For the MVP, a defined destination is required for the main roadmap-generation flow.
+
+### Question 1 — What career direction are you currently interested in?
+
+Options should be kept limited for MVP.
+
+Recommended initial destinations:
+
+* Software Engineer
+* AI / Machine Learning Engineer
+* Data Analyst / Data Scientist
+* Cybersecurity
+* Quantitative / Finance + Technology
+* Research / Computational Research
+* Product / Technology Entrepreneurship
+* Other technical career
+
+### Question 2 — How certain are you about this goal?
+
+Options:
+
+* Very certain
+* Fairly certain
+* Exploring this seriously
+* Not sure
+
+### Question 3 — What attracts you to this career?
+
+**Multi-select**
+
+* Salary / financial independence
+* Problem solving
+* Technology
+* Creativity
+* Research
+* Building products
+* Impact
+* Job opportunities
+* Interest in the subject
+* Family/social influence
+* Other
+
+### Question 4 — What would success look like to you?
+
+Options:
+
+* Internship during college
+* Strong first job
+* Building my own products/startup
+* Research / higher studies
+* Financial independence
+* Becoming highly skilled
+* Still figuring this out
+
+### What AI learns from Form 4
+
+* Desired destination
+* Goal confidence
+* Motivation
+* Definition of success
+* Whether the goal is strong or exploratory
+
+### MVP RULE
+
+If the student selects:
+
+> “I don't know what career I want”
+
+the full career-discovery engine is NOT required for MVP.
+
+This can become a **Phase 2 feature**.
+
+For the hackathon MVP, the primary demo should use students who can identify at least a broad target direction.
+
+---
+
+# FORM 5 — CURRENT SKILLS
+
+### Purpose
+
+Understand what the student can actually do today.
+
+### Question 1 — Which skills have you already worked on?
+
+**Multi-select**
+
+* Python
+* C/C++
+* Java
+* JavaScript
+* HTML/CSS
+* SQL
+* Data analysis
+* Mathematics
+* Statistics
+* Machine learning
+* Git/GitHub
+* Communication
+* Presentation
+* Research
+* None yet
+* Other
+
+### Question 2 — How would you rate your current technical level?
+
+Instead of one overall score, show the selected skills and allow self-assessment.
+
+For each selected skill:
+
+* Beginner
+* Basic
+* Intermediate
+* Advanced
+
+Label this clearly:
+
+> **Self-assessed level**
+
+### Question 3 — Have you built anything yourself?
+
+Options:
+
+* No project yet
+* Small practice projects
+* 1–2 serious projects
+* Multiple projects
+* Hackathon/open-source experience
+
+### Question 4 — How comfortable are you with learning independently?
+
+Options:
+
+* I need significant guidance
+* I can follow structured resources
+* I can learn independently
+* I usually learn by building
+
+### What AI learns from Form 5
+
+* Current skill baseline
+* Skill gaps
+* Practical experience
+* Learning independence
+* Starting point for roadmap
+
+---
+
+# FINAL STUDENT PROFILE
+
+After the five forms, the system should conceptually have:
+
+```text
+PAST
+├── Academic background
+├── Strong subjects
+├── Academic level
+└── Entrance-exam status
+
+PRESENT
+├── Interests
+├── Work preferences
+├── Learning preferences
+└── Current activities
+
+CURRENT SITUATION
+├── College status
+├── Budget preference
+├── Location/relocation
+├── Priorities
+└── Available time
+
+GOAL
+├── Career destination
+├── Goal certainty
+├── Motivation
+└── Definition of success
+
+SKILLS
+├── Existing skills
+├── Self-assessed levels
+├── Project experience
+└── Learning independence
+```
+
+This profile becomes the input to the AI engine.
+
+---
+
+# WHAT HAPPENS AFTER FORM 5?
+
+The system should NOT immediately tell the student:
+
+> “This is your best career.”
+
+Instead:
+
+## STEP 1 — AI analyses current state
+
+```text
+Where is the student now?
+```
+
+↓
+
+## STEP 2 — AI identifies relevant gaps
+
+```text
+What is missing between current state and goal?
+```
+
+↓
+
+## STEP 3 — AI generates 2–3 genuinely different routes
+
+```text
+Different education/skill/entry strategies
+→
+Same desired destination
+```
+
+↓
+
+## STEP 4 — Student compares routes
+
+Each route should show:
+
+* Degree/education route
+* Specialization
+* Timeline
+* Skills required
+* Projects
+* Internship strategy
+* Estimated effort
+* Relevant constraints
+* Trade-offs
+* Why it fits the student
+
+↓
+
+## STEP 5 — Student chooses a route
+
+↓
+
+## STEP 6 — Product converts route into an actionable journey
+
+```text
+Long-term goal
+↓
+Milestones
+↓
+Monthly objectives
+↓
+Weekly objectives
+↓
+Daily missions
+```
+
+↓
+
+## STEP 7 — Progress tracking
+
+* Completed tasks
+* Skill progress
+* Streak
+* Milestones
+* Roadmap completion
+
+---
+
+# TEAM OWNERSHIP
+
+## Rohan — Frontend
+
+Use these five forms to update the current UI.
+
+Do NOT redesign the entire frontend.
+
+Keep:
+
+* full-screen questions
+* 5-step indicator
+* current visual style
+* roadmap experience
+* progress dashboard
+
+Modify where necessary so the UI can capture the fields defined above.
+
+---
+
+## Aditya — Content / UX
+
+Review:
+
+* wording
+* options
+* question clarity
+* whether an 18-year-old understands every question
+* remove unnecessary questions
+* check whether the form feels too long
+
+His next task is to review this document, NOT start creating another independent question set.
+
+---
+
+## Gagan — Backend
+
+Do NOT build the final AI integration yet.
+
+First prepare the backend/database structure around the final profile.
+
+The backend must eventually be able to send the complete student profile to Dhruv's AI module.
+
+---
+
+## Dhruv — AI / LLM
+
+
+### 1. AI INPUT SCHEMA
+
+Exactly what JSON the AI receives.
+
+### 2. AI OUTPUT SCHEMA
+
+Exactly what JSON the AI must return.
+
+### 3. PATH DIVERSITY RULES
+
+Define what makes 3 routes genuinely different.
+
+### 4. AI SAFETY / REALISM RULES
+
+Prevent:
+
+* guaranteed-job claims
+* fake certifications
+* unrealistic timelines
+* unsupported assumptions
+* duplicate routes
+* impossible educational routes
+
+### 5. PROMPT V1
+
+Only AFTER the input/output schema is locked.
+
+---
+
+## Aniket — Visualization
+
+Do not invent a new roadmap structure.
+
+Wait for Dhruv's output schema.
+
+Then design the roadmap/comparison UI around the actual fields returned by the AI.
+
+---
+
+# MVP OUT OF SCOPE
+
+Do NOT build these until the core loop works:
+
+* Full psychometric testing
+* All Indian streams
+* Hundreds of careers
+* Huge college database
+* Job marketplace
+* Resume builder
+* Social network
+* AI chatbot/copilot
+* Complex recommendation ML
+* Advanced notification system
+* Payment system
+* Mobile app
+* Elaborate analytics
+
+The core product must work first:
+
+**5 Forms → Student Profile → AI → 3 Routes → Choose → Roadmap**
+
+Everything else is secondary.
