@@ -37,7 +37,10 @@
         "strong_technical_skills",
         "early_internships"
       ],
-      "weekly_extra_time": "5_to_10_hours"
+      "time_availability": {
+        "hours_per_week": "5_to_10",
+        "major_current_commitment": "JEE_preparation"
+      }
     },
 
     "goal": {
