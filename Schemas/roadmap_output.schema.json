@@ -17,21 +17,89 @@
     "paths": {
       "type": "array",
       "minItems": 2,
-      "maxItems": 3
-      
-      "items": {
-        "type": "object"
+      "maxItems": 3,
 
-          "required": [
-            "path_id",
-            "title"
-          ],
+      "items": {
+        "type": "object",
+
+        "required": [
+          "path_id",
+          "title",
+          "education",
+          "timeline",
+          "milestones"
+        ],
+
         "properties": {
           "path_id": {
             "type": "string"
           },
+
           "title": {
             "type": "string"
+          },
+
+          "education": {
+            "type": "object",
+
+            "required": [
+              "degree",
+              "branch"
+            ],
+
+            "properties": {
+              "degree": {
+                "type": "string"
+              },
+
+              "branch": {
+                "type": "string"
+              }
+            }
+          },
+
+          "timeline": {
+            "type": "string"
+          },
+
+          "milestones": {
+            "type": "array",
+            "minItems": 1,
+
+            "items": {
+              "type": "object",
+
+              "required": [
+                "phase",
+                "focus",
+                "skills",
+                "projects"
+              ],
+
+              "properties": {
+                "phase": {
+                  "type": "string"
+                },
+
+                "focus": {
+                  "type": "string"
+                },
+
+                "skills": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+
+                "projects": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
           }
         }
       }
