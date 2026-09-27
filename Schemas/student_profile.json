@@ -8,7 +8,10 @@
       ],
       "academic_level": "above_average",
       "entrance_exam_status": [
-        "JEE"
+        {
+          "name": "JEE",
+          "status": "preparing"
+        }
       ]
     },
 
