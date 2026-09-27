@@ -1,5 +1,40 @@
 {
-  "$schema": "...",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "Roadmap Output",
-  "type": "object"
+  "description": "Structured roadmap generated for a student's career goal.",
+  "type": "object",
+
+  "required": [
+    "destination",
+    "paths"
+  ],
+
+  "properties": {
+    "destination": {
+      "type": "string"
+    },
+
+    "paths": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 3
+      
+      "items": {
+        "type": "object"
+
+          "required": [
+            "path_id",
+            "title"
+          ],
+        "properties": {
+          "path_id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
 }
