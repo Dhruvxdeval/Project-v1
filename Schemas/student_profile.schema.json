@@ -4,7 +4,9 @@
   "description": "Structured profile collected from the five onboarding forms.",
   "type": "object",
 
-  "required": ["student"],
+  "required": [
+    "student"
+  ],
 
   "properties": {
     "student": {
@@ -22,17 +24,26 @@
 
         "past": {
           "type": "object",
+
           "required": [
             "stream",
             "strong_subjects",
             "academic_level",
             "entrance_exam_status"
           ],
+
           "properties": {
 
             "stream": {
               "type": "string",
-              "enum": ["PCM"]
+              "enum": [
+                "PCM",
+                "PCB",
+                "Commerce",
+                "Humanities",
+                "Vocational",
+                "Other"
+              ]
             },
 
             "strong_subjects": {
@@ -55,8 +66,25 @@
 
             "entrance_exam_status": {
               "type": "array",
+
               "items": {
-                "type": "string"
+                "type": "object",
+
+                "required": [
+                  "name",
+                  "status"
+                ],
+
+                "properties": {
+
+                  "name": {
+                    "type": "string"
+                  },
+
+                  "status": {
+                    "type": "string"
+                  }
+                }
               }
             }
           }
@@ -64,6 +92,7 @@
 
         "present": {
           "type": "object",
+
           "required": [
             "interests",
             "work_preferences",
@@ -102,12 +131,13 @@
 
         "situation": {
           "type": "object",
+
           "required": [
             "college_status",
             "budget_preference",
             "relocation",
             "priorities",
-            "weekly_extra_time"
+            "time_availability"
           ],
 
           "properties": {
@@ -131,14 +161,31 @@
               }
             },
 
-            "weekly_extra_time": {
-              "type": "string"
+            "time_availability": {
+              "type": "object",
+
+              "required": [
+                "hours_per_week",
+                "major_current_commitment"
+              ],
+
+              "properties": {
+
+                "hours_per_week": {
+                  "type": "string"
+                },
+
+                "major_current_commitment": {
+                  "type": "string"
+                }
+              }
             }
           }
         },
 
         "goal": {
           "type": "object",
+
           "required": [
             "career",
             "certainty",
@@ -154,6 +201,7 @@
 
             "certainty": {
               "type": "string",
+
               "enum": [
                 "very_certain",
                 "fairly_certain",
@@ -180,6 +228,7 @@
 
         "skills": {
           "type": "object",
+
           "required": [
             "technical",
             "project_experience",
@@ -190,6 +239,7 @@
 
             "technical": {
               "type": "object",
+
               "additionalProperties": {
                 "type": "string"
               }
