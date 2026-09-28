@@ -1,27 +1,24 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Roadmap Output",
-  "description": "Structured roadmap generated for a student's career goal.",
+  "title": "Roadmap Output V2",
+  "description": "Structured multi-path career roadmap generated from a student's profile.",
   "type": "object",
-
+  "additionalProperties": false,
   "required": [
     "destination",
     "paths"
   ],
-
   "properties": {
     "destination": {
       "type": "string"
     },
-
     "paths": {
       "type": "array",
       "minItems": 2,
       "maxItems": 3,
-
       "items": {
         "type": "object",
-
+        "additionalProperties": false,
         "required": [
           "path_id",
           "title",
@@ -32,82 +29,71 @@
           "milestones",
           "internship_strategy"
         ],
-
         "properties": {
           "path_id": {
             "type": "string"
           },
-
           "title": {
             "type": "string"
           },
-
           "education": {
             "type": "object",
-
+            "additionalProperties": false,
             "required": [
               "degree",
               "branch"
             ],
-
             "properties": {
               "degree": {
                 "type": "string"
               },
-
               "branch": {
                 "type": "string"
               }
             }
           },
-
           "timeline": {
             "type": "string"
           },
-
           "why_it_fits": {
             "type": "string"
           },
-
           "tradeoffs": {
             "type": "array",
             "minItems": 1,
-
             "items": {
               "type": "string"
             }
           },
-
           "milestones": {
             "type": "array",
             "minItems": 1,
-
             "items": {
               "type": "object",
-
+              "additionalProperties": false,
               "required": [
                 "phase",
+                "timeframe",
                 "focus",
                 "skills",
                 "projects"
               ],
-
               "properties": {
                 "phase": {
                   "type": "string"
                 },
-
+                "timeframe": {
+                  "type": "string"
+                },
                 "focus": {
                   "type": "string"
                 },
-
                 "skills": {
                   "type": "array",
                   "items": {
                     "type": "string"
                   }
                 },
-
                 "projects": {
                   "type": "array",
                   "items": {
@@ -117,36 +103,31 @@
               }
             }
           },
-
           "internship_strategy": {
             "type": "object",
-
+            "additionalProperties": false,
             "required": [
               "readiness",
               "target_roles",
               "preparation",
               "application_stage"
             ],
-
             "properties": {
               "readiness": {
                 "type": "string"
               },
-
               "target_roles": {
                 "type": "array",
                 "items": {
                   "type": "string"
                 }
               },
-
               "preparation": {
                 "type": "array",
                 "items": {
                   "type": "string"
                 }
               },
-
               "application_stage": {
                 "type": "string"
               }
