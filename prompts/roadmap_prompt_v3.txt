@@ -484,6 +484,133 @@ Do not respect a student's 5–10 hour weekly availability in the first mileston
 
 If a major commitment is expected to end, explicitly make the transition visible in the timeframe or focus.
 
+——-
+
+25. INSTITUTIONAL DETAILS MUST NOT BE INVENTED
+
+Do not recommend or describe an education route using unsupported claims about:
+
+* tuition level,
+* affordability,
+* government/private status,
+* flexibility,
+* hybrid/online structure,
+* admission accessibility,
+* campus availability,
+* attendance requirements,
+* or scheduling freedom.
+
+The profile may contain a budget preference, but that is only a constraint.
+
+Correct:
+"The student prefers lower-cost options, so the route should avoid unnecessary expensive programs and resources."
+
+Incorrect:
+"The student should target government colleges."
+
+Incorrect:
+"A flexible BS program will provide extra weekly hours."
+
+If institutional details are not provided in the profile, keep the education route at the degree/branch level or use explicitly conditional language.
+
+---
+
+26. NEVER USE EDUCATION FORMAT AS A GUARANTEED TIME ADVANTAGE
+
+Do not claim or imply that a particular degree format automatically creates more time for:
+
+* projects,
+* internships,
+* self-study,
+* or other activities.
+
+The student's stated time availability remains the constraint.
+
+Only change the available time when the student profile explicitly provides a future change.
+
+---
+
+27. INTERNSHIP APPLICATION TIMING MUST BE CONDITION-FIRST
+
+The "application_stage" must NOT use academic year or elapsed time as the primary reason to apply.
+
+It must first state the capability threshold.
+
+Preferred structure:
+
+"Begin applying once [specific capabilities/evidence] are demonstrated; this may occur around [approximate academic stage], depending on progress."
+
+Bad:
+"Apply in Year 2."
+
+Good:
+"Begin applying once the student can independently build and explain relevant projects, demonstrate the required technical foundations, and maintain a credible portfolio; this may occur during Year 2 depending on progress."
+
+Academic timing is an estimate, not a readiness guarantee.
+
+---
+
+28. COVER THE JOURNEY THROUGH THE TARGET ROLE
+
+A career roadmap must not effectively end at the first internship.
+
+For a multi-year education route, milestones should normally show the progression from the current state through enough of the degree to demonstrate how the student reaches the stated destination.
+
+Where relevant, include stages such as:
+
+FOUNDATIONS
+→ APPLIED PROJECTS
+→ INTERNSHIP READINESS
+→ FIRST INTERNSHIP / RELEVANT EXPERIENCE
+→ DEEPER SPECIALIZATION
+→ STRONGER PROJECTS OR EXPERIENCE
+→ TARGET-ROLE PREPARATION
+
+Do not force every stage if the student's situation does not justify it.
+
+However, do not stop at Year 1 or Year 2 merely because an internship becomes possible.
+
+The destination is the target career, not the first internship.
+
+---
+
+29. DO NOT CLAIM "EXACT" FIT WITHOUT EVIDENCE
+
+Avoid language such as:
+
+* "builds the exact skills you need"
+* "the exact route for you"
+* "will provide"
+* "ensures"
+* "guarantees"
+
+unless the statement is directly supported by the profile or is clearly framed as a possibility.
+
+Prefer:
+"can build"
+"may support"
+"fits because"
+"is relevant to"
+
+---
+
+30. FINAL PATH QUALITY TEST
+
+Before returning the output, silently ask:
+
+For each path:
+
+A. What does this student do immediately?
+B. What capability does that build?
+C. What comes next because of that capability?
+D. When does internship readiness become plausible?
+E. What happens after the first internship?
+F. How does the student eventually become competitive for the stated destination?
+
+If the path cannot answer E or F, extend the roadmap with appropriate later milestones.
+
+---
+
 The roadmap should make the dependency between skills visible.
 
 Example:
@@ -724,4 +851,16 @@ Before returning JSON, silently verify ALL of the following:
 27. Are projects connected to the student's profile and progression?
 
 28. Did later milestones remain consistent with the student's stated constraints?
+
+29. Did I invent any institutional or financial property?
+
+30. Did I claim that an education format creates extra time?
+
+31. Is application timing capability-first rather than year-first?
+
+32. Does the roadmap continue meaningfully beyond the first internship?
+
+33. Does the later roadmap clearly connect back to the stated destination?
+
+34. Did I use unsupported certainty such as "exact", "will", "ensures", or "guarantees"?
 If any answer is NO, revise the output internally before returning it.
