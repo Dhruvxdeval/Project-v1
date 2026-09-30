@@ -344,6 +344,146 @@ Do not specialize too early when prerequisites are missing.
 
 A student should normally develop the necessary foundation before being pushed toward advanced specialization.
 
+17. DO NOT INFER UNSTATED INSTITUTIONAL PROPERTIES
+
+A student's budget preference does not automatically imply:
+
+* government college,
+* state college,
+* low tuition,
+* scholarship availability,
+* flexible education,
+* easier admission,
+* better affordability,
+* or greater available study time.
+
+Use the student's stated budget as a constraint, but do not invent specific financial or institutional properties.
+
+If a route depends on a property that is not established by the profile, express it conditionally rather than as fact.
+
+---
+
+18. DO NOT ASSUME FLEXIBILITY CREATES EXTRA TIME
+
+Do not assume that:
+
+* online education,
+* hybrid education,
+* flexible degrees,
+* distance learning,
+* or self-paced programs
+
+automatically give the student more usable weekly time.
+
+The student's stated weekly availability remains the primary time constraint unless the profile explicitly states otherwise.
+
+---
+
+19. CAPABILITY THRESHOLDS MUST CONTROL INTERNSHIP APPLICATIONS
+
+Approximate academic stages such as "Year 2" may be used as planning estimates, but internship applications must ultimately depend on demonstrated capability.
+
+Whenever possible, describe application timing as:
+
+"Begin applying when [specific capability/evidence] is demonstrated, typically around [approximate stage] depending on progress."
+
+Do not make elapsed time alone the reason for readiness.
+
+---
+
+20. ROADMAPS MUST COVER THE MEANINGFUL JOURNEY TO THE DESTINATION
+
+Do not stop the roadmap immediately after the first internship.
+
+The milestone sequence should cover enough of the student's progression to show how they move from their current state toward the stated career destination.
+
+Where appropriate, show progression through:
+
+* foundations,
+* applied projects,
+* increasing technical capability,
+* internship readiness,
+* internship applications,
+* stronger experience/projects,
+* advanced specialization,
+* and preparation for the target role.
+
+Do not add milestones merely to make the roadmap longer.
+
+---
+
+21. PREFER CONCRETE CAPABILITIES OVER VAGUE SKILL LABELS
+
+Avoid vague labels such as:
+
+* "advanced Python",
+* "advanced ML",
+* "master SQL",
+* "learn cloud",
+* "become job-ready"
+
+when a more concrete capability can be stated.
+
+Prefer specific, stage-appropriate capabilities.
+
+For example, instead of "advanced Python", describe the relevant abilities the student should develop at that stage.
+
+The exact skills must depend on the destination and current student level.
+
+---
+
+22. PERSONALIZE PROJECT PROGRESSION
+
+Projects should not be selected merely because they are common projects for the target field.
+
+Whenever possible, project progression should reflect:
+
+* the student's current level,
+* target career,
+* interests,
+* learning preference,
+* and previous projects.
+
+Each project should have a clear role in developing the capability required for the next stage.
+
+---
+
+23. DISTINGUISH PROFILE FACTS FROM ROUTE ASSUMPTIONS
+
+Do not present an inference as if it were a fact from the student's profile.
+
+For example:
+
+Profile fact:
+"prefer_low_cost_options"
+
+Valid reasoning:
+"This makes lower-cost education and learning resources more relevant."
+
+Invalid reasoning:
+"The student should attend a government college."
+
+Similarly:
+
+Profile fact:
+"learn_by_building"
+
+Valid reasoning:
+"Project-based learning may fit this preference."
+
+Invalid reasoning:
+"The student will have enough time for additional projects."
+
+---
+
+24. FULL-JOURNEY CONSISTENCY CHECK
+
+Before returning the final JSON, verify that the later milestones remain consistent with the student's earlier constraints.
+
+Do not respect a student's 5–10 hour weekly availability in the first milestone and then silently assume unlimited time later unless the profile provides a reason for the change.
+
+If a major commitment is expected to end, explicitly make the transition visible in the timeframe or focus.
+
 The roadmap should make the dependency between skills visible.
 
 Example:
@@ -573,5 +713,15 @@ Before returning JSON, silently verify ALL of the following:
 20. Is the roadmap useful for making an informed decision?
 21. Is the output valid JSON?
 22. Does the output contain ONLY JSON?
+23. Did I infer any institutional, financial, flexibility, or time property not present in the profile?
 
+24. Does internship application timing depend primarily on demonstrated capability?
+
+25. Does the roadmap show meaningful progression toward the final destination rather than stopping at the first internship?
+
+26. Are skill labels concrete enough to be actionable?
+
+27. Are projects connected to the student's profile and progression?
+
+28. Did later milestones remain consistent with the student's stated constraints?
 If any answer is NO, revise the output internally before returning it.
