@@ -1,0 +1,325 @@
+{
+  "destination": "AI/ML Engineer",
+  "paths": [
+    {
+      "path_id": "PATH_A",
+      "title": "Structured engineering degree, then specialize in ML",
+      "education": {
+        "degree": "B.Tech",
+        "branch": "Computer Science and Engineering"
+      },
+      "timeline": "About 4 years of degree study, with ML specialization and target-role preparation overlapping the later part of the degree. Actual pace depends on the student's progress.",
+      "why_it_fits": "The student is preparing for JEE, has strong Mathematics and Physics, and prioritizes strong technical skills. A B.Tech in Computer Science and Engineering can build programming, data structures, and systems fundamentals that are relevant to ML engineering. Admission depends on entrance results and seat availability, which the profile does not establish. Because the student prefers low-cost options, tuition and living cost should be compared for each admitted option once admissions are known.",
+      "tradeoffs": [
+        "Admission is not certain; the profile only says the student is preparing for JEE, so a fallback route may be needed if the outcome does not match expectations.",
+        "Degree coursework may follow a fixed curriculum, so ML-specific depth would probably need self-directed work alongside it.",
+        "Cost varies by institution and is unknown at this stage; the student should compare it once real options exist.",
+        "Until JEE preparation ends, only 5-10 hours per week are available, so pre-college progress must stay small and steady."
+      ],
+      "milestones": [
+        {
+          "phase": "Foundations during JEE preparation",
+          "timeframe": "0-3 months",
+          "focus": "Turn basic Python into reliable, independent coding at the pace of 5-10 hours per week, without displacing JEE preparation.",
+          "skills": [
+            "Write Python functions, loops, dictionaries, and file handling without copying from a tutorial",
+            "Use Git to commit, branch, and push a small repository to GitHub",
+            "Read and explain a short script written by someone else"
+          ],
+          "projects": [
+            "A command-line tool such as a study-timer or expense tracker, committed to GitHub with a README"
+          ]
+        },
+        {
+          "phase": "Data handling basics",
+          "timeframe": "Months 4-9",
+          "focus": "Add data skills that connect to the student's Mathematics strength, while keeping within the stated weekly hours.",
+          "skills": [
+            "Write SQL SELECT queries with WHERE, GROUP BY, and JOIN on a small database",
+            "Load and clean a CSV file using pandas",
+            "Plot distributions and relationships with matplotlib",
+            "Compute mean, variance, and correlation and explain what they show"
+          ],
+          "projects": [
+            "Analyze a public dataset of the student's interest and write a short findings summary in a GitHub notebook"
+          ]
+        },
+        {
+          "phase": "Transition point after JEE",
+          "timeframe": "After JEE preparation ends; date not stated in the profile",
+          "focus": "Make the change in available time explicit. Hours per week should be re-stated by the student once JEE preparation is over, and the plan adjusted to that stated number rather than assumed.",
+          "skills": [
+            "Compare admitted options on tuition, living cost, and curriculum content"
+          ],
+          "projects": []
+        },
+        {
+          "phase": "Degree fundamentals",
+          "timeframe": "Degree Year 1",
+          "focus": "Build the programming and mathematics base that later ML work depends on.",
+          "skills": [
+            "Implement arrays, linked lists, stacks, queues, and hash maps and state their time complexity",
+            "Apply linear algebra concepts such as matrix multiplication and eigenvectors to small numeric problems in NumPy",
+            "Use probability rules and Bayes theorem on worked examples"
+          ],
+          "projects": [
+            "Implement linear regression from scratch with NumPy and compare it with a library version on the same data"
+          ]
+        },
+        {
+          "phase": "First applied ML projects",
+          "timeframe": "Degree Year 1 to early Degree Year 2",
+          "focus": "Move from a from-scratch understanding to end-to-end supervised learning projects.",
+          "skills": [
+            "Split data into train, validation, and test sets and explain why",
+            "Train and compare logistic regression, decision trees, and random forests with scikit-learn",
+            "Choose and interpret metrics such as precision, recall, and F1 for a given problem",
+            "Detect overfitting from training versus validation curves"
+          ],
+          "projects": [
+            "A classification project on a dataset the student collected or chose, with a documented comparison of at least three models and a written error analysis"
+          ]
+        },
+        {
+          "phase": "Internship readiness",
+          "timeframe": "Estimated Degree Year 2, depending on progress",
+          "focus": "Reach the capability gate before applying rather than applying because of the calendar.",
+          "skills": [
+            "Independently build, evaluate, and document an ML project from raw data to a reproducible repository",
+            "Explain the choices made in a project to a stranger in a 10-minute walkthrough",
+            "Solve easy-to-medium data structures problems in Python without help"
+          ],
+          "projects": [
+            "Two public GitHub projects with READMEs, clear setup steps, and results a reviewer can reproduce"
+          ]
+        },
+        {
+          "phase": "First internship or relevant experience",
+          "timeframe": "Begins when readiness conditions are met; may fall around Degree Year 2 or 3",
+          "focus": "Gain experience in a real team setting through an ML, data, or software internship, or through comparable experience such as open-source contribution or a research-style project under a faculty member.",
+          "skills": [
+            "Work with a shared codebase using pull requests and code review",
+            "Deliver a scoped task on a deadline and report progress to a mentor"
+          ],
+          "projects": [
+            "One contribution or deliverable that can be described with the problem, the approach, and the measured result"
+          ]
+        },
+        {
+          "phase": "Deeper specialization",
+          "timeframe": "Degree Year 3",
+          "focus": "Choose a focus area within ML based on what the internship and coursework revealed, rather than covering everything.",
+          "skills": [
+            "Train a neural network in PyTorch and debug loss that does not decrease",
+            "Explain backpropagation and gradient descent on a small network by hand",
+            "Work through one specialty area, such as NLP, computer vision, or tabular modelling, at the level of reproducing a published result on a small dataset"
+          ],
+          "projects": [
+            "A project in the chosen specialty that goes beyond a tutorial, for example fine-tuning a small pretrained model on a new dataset and reporting where it fails"
+          ]
+        },
+        {
+          "phase": "Deployment and engineering practice",
+          "timeframe": "Degree Year 3 to 4",
+          "focus": "Add the engineering skills an ML engineer role generally involves, only after modelling basics are solid.",
+          "skills": [
+            "Wrap a trained model in a simple API and test it",
+            "Package a project with a dependency file and a container image that runs on another machine",
+            "Track experiments so results can be reproduced"
+          ],
+          "projects": [
+            "Take the specialization project and make it callable through an API with basic tests and documentation"
+          ]
+        },
+        {
+          "phase": "Target-role preparation",
+          "timeframe": "Degree Year 4",
+          "focus": "Prepare for AI/ML Engineer entry-level roles using a portfolio built over the previous stages.",
+          "skills": [
+            "Explain the trade-offs behind each project decision in an interview setting",
+            "Solve medium-level coding problems and ML concept questions under time pressure",
+            "Describe a model's failure modes and how they would be monitored"
+          ],
+          "projects": [
+            "A capstone ML system or research-style project that combines data pipeline, model, and serving, with a written report"
+          ]
+        }
+      ],
+      "internship_strategy": {
+        "readiness": "Readiness is gated by capability, not by academic year. The student is ready to begin applying once they can independently show: (1) an ML project built end to end with a reproducible repository, (2) solid Python and SQL for data handling, and (3) easy-to-medium data structures problem solving. This may occur around Degree Year 2 depending on progress.",
+        "target_roles": [
+          "Data analyst intern",
+          "Software development intern with a data focus",
+          "ML or data science intern",
+          "Research assistant or project intern under a faculty member"
+        ],
+        "preparation": [
+          "Keep two to three documented GitHub projects current",
+          "Practice explaining project decisions aloud",
+          "Prepare a one-page resume that lists concrete capabilities and links",
+          "Use adjacent roles such as data or software internships as a way to gain experience if ML-specific internships are hard to find"
+        ],
+        "application_stage": "Begin applying when the three readiness conditions are demonstrable. Start with adjacent data and software roles alongside ML roles, and treat any offer as uncertain rather than expected."
+      }
+    },
+    {
+      "path_id": "PATH_B",
+      "title": "Mathematics-heavy degree with a project-first ML track",
+      "education": {
+        "degree": "B.Sc",
+        "branch": "Mathematics"
+      },
+      "timeline": "About 3 years of degree study, with a self-directed ML and software track alongside it and target-role preparation continuing after the degree. Total time to the target role may be longer than Path A because computer science fundamentals are taught less within the degree.",
+      "why_it_fits": "The student has strong Mathematics and Physics, enjoys problem solving, and learns by building. A Mathematics degree can build the linear algebra, probability, and optimization foundations that ML relies on, while the student's own projects supply the programming and engineering side. This route depends more on self-directed learning, which the profile supports only partly: the student can follow structured resources, but has only small practice projects so far. Cost should be compared per institution, since the profile does not establish it.",
+      "tradeoffs": [
+        "Computer science topics such as data structures, operating systems, and databases are likely to be less covered, so the student must study them independently and prove them through projects.",
+        "Some employers may prefer a computer science or engineering degree for ML engineer roles, which could make early internships harder to obtain.",
+        "Progress depends heavily on the student's own discipline, because no curriculum enforces the programming track.",
+        "Until JEE preparation ends, the same 5-10 hours per week apply, and the JEE outcome affects whether this route is chosen or only kept as an alternative."
+      ],
+      "milestones": [
+        {
+          "phase": "Foundations during JEE preparation",
+          "timeframe": "0-3 months",
+          "focus": "Build reliable Python habits and a GitHub presence within 5-10 hours per week.",
+          "skills": [
+            "Write Python programs of 100 to 200 lines that read input, process data, and print results",
+            "Commit and push work to GitHub with meaningful messages",
+            "Write a SQL query that filters and sorts rows in one table"
+          ],
+          "projects": [
+            "A small program that solves a Mathematics problem numerically, such as root finding or a simple simulation, with a README"
+          ]
+        },
+        {
+          "phase": "Math-linked programming",
+          "timeframe": "Months 4-9",
+          "focus": "Connect the student's Mathematics strength to code, since it is the route's core advantage.",
+          "skills": [
+            "Use NumPy to perform matrix operations and solve linear systems",
+            "Implement gradient descent for a one-variable and a two-variable function and plot its path",
+            "Load a CSV with pandas, clean missing values, and summarize with SQL-style grouping"
+          ],
+          "projects": [
+            "A visual gradient descent explorer that lets the user change the learning rate and see convergence"
+          ]
+        },
+        {
+          "phase": "Transition point after JEE",
+          "timeframe": "After JEE preparation ends; date not stated in the profile",
+          "focus": "Make the change in available time explicit. The student should state the new weekly hours and the plan should be adjusted to that number instead of assuming more time.",
+          "skills": [
+            "Decide between this path and a computer-science-based route once real admission options are known"
+          ],
+          "projects": []
+        },
+        {
+          "phase": "Degree mathematics plus core programming",
+          "timeframe": "Degree Year 1",
+          "focus": "Study the degree's calculus, linear algebra, and probability while independently covering programming fundamentals that the degree may not.",
+          "skills": [
+            "Implement common data structures such as lists, hash maps, stacks, and queues in Python",
+            "Explain the relationship between eigenvalues and principal component analysis",
+            "Write SQL joins across two or more tables"
+          ],
+          "projects": [
+            "Implement PCA from scratch and apply it to a real dataset, then compare with a library implementation"
+          ]
+        },
+        {
+          "phase": "Applied ML projects",
+          "timeframe": "Degree Year 1 to early Degree Year 2",
+          "focus": "Build supervised learning projects with careful evaluation.",
+          "skills": [
+            "Train and evaluate regression and classification models with scikit-learn",
+            "Use cross-validation and explain the bias-variance trade-off",
+            "Write a reproducible notebook that another person can rerun"
+          ],
+          "projects": [
+            "A prediction project on a dataset of the student's interest with a written comparison of models and a discussion of limitations"
+          ]
+        },
+        {
+          "phase": "Internship readiness",
+          "timeframe": "Estimated Degree Year 2, depending on progress",
+          "focus": "Show software and ML competence through public work, since the degree title alone may not signal it.",
+          "skills": [
+            "Build an ML project from data collection to a documented repository without step-by-step guidance",
+            "Solve easy-to-medium coding problems in Python without help",
+            "Write tests for the data-processing functions in a project"
+          ],
+          "projects": [
+            "Three public projects of increasing scope, at least one involving a dataset the student gathered themselves"
+          ]
+        },
+        {
+          "phase": "First internship or relevant experience",
+          "timeframe": "Begins when readiness conditions are met; may fall around Degree Year 2 or 3",
+          "focus": "Get real-team experience through data analyst, software, or ML internships, or through project work such as open-source contributions, competitions, or a mentored research project.",
+          "skills": [
+            "Work with pull requests and code review in a team",
+            "Communicate results of an analysis to a non-technical reader"
+          ],
+          "projects": [
+            "A documented deliverable from the internship or contribution, with the problem, method, and result stated"
+          ]
+        },
+        {
+          "phase": "Deeper specialization",
+          "timeframe": "Degree Year 3",
+          "focus": "Move from classical ML to deep learning in one chosen area, using mathematical depth as an advantage.",
+          "skills": [
+            "Derive and implement backpropagation for a small neural network in NumPy",
+            "Train a model in PyTorch and diagnose training problems",
+            "Read a published ML paper in the chosen area and reproduce a simplified version of its main result"
+          ],
+          "projects": [
+            "Reproduce a small published result and write a short report on where the reproduction differs from the paper"
+          ]
+        },
+        {
+          "phase": "Engineering gap-closing",
+          "timeframe": "Degree Year 3 to just after the degree",
+          "focus": "Close the software engineering gap that this route leaves, since ML engineer roles generally involve shipping code.",
+          "skills": [
+            "Build a REST API around a trained model and write tests for it",
+            "Use a container to make a project run on another machine",
+            "Explain how a model would be versioned and monitored after release"
+          ],
+          "projects": [
+            "Deploy the reproduced-paper model or a similar project behind an API with documentation"
+          ]
+        },
+        {
+          "phase": "Target-role preparation",
+          "timeframe": "Final degree year and the period after it",
+          "focus": "Prepare for AI/ML Engineer entry roles, possibly through a further degree or a junior data or software role if direct entry proves difficult.",
+          "skills": [
+            "Answer coding and ML concept questions in an interview setting",
+            "Present a portfolio project's design decisions and failure cases",
+            "Decide whether a master's program or a junior role is the better next step given the student's progress and finances"
+          ],
+          "projects": [
+            "A capstone project that combines a custom data pipeline, a trained model, and a served endpoint, with a written report"
+          ]
+        }
+      ],
+      "internship_strategy": {
+        "readiness": "Readiness is gated by demonstrated capability. The student is ready to begin applying once they can show: (1) at least two public ML projects with reproducible code, (2) working Python and SQL for data tasks, and (3) evidence of software practice such as tests, version control history, and documentation. This may occur around Degree Year 2 depending on progress, and could take longer than on a computer science route.",
+        "target_roles": [
+          "Data analyst intern",
+          "Quantitative or statistics-focused intern",
+          "ML or data science intern",
+          "Software development intern with a data focus"
+        ],
+        "preparation": [
+          "Use public projects and open-source contributions as proof of skill, because the degree title may not signal programming ability",
+          "Practice explaining the mathematical reasoning behind each project",
+          "Prepare a resume that leads with projects and concrete capabilities",
+          "Apply broadly to adjacent roles and treat ML-specific internships as one option among several"
+        ],
+        "application_stage": "Begin applying when the three readiness conditions are demonstrable. Because the route has less institutional signalling, expect to send more applications and treat outcomes as uncertain."
+      }
+    }
+  ]
+}
