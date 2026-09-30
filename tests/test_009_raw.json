@@ -1,0 +1,133 @@
+{
+  "destination": "AI/ML Engineer",
+  "paths": [
+    {
+      "path_id": "PATH_A",
+      "title": "B.Tech Engineering Path",
+      "education": {
+        "degree": "B.Tech",
+        "branch": "Computer Science"
+      },
+      "timeline": "4 Years",
+      "why_it_fits": "Structured academic environment providing foundational theory; compare total cost per institution against the student's stated budget preference.",
+      "tradeoffs": [
+        "Curriculum may delay specialized ML topics to later years.",
+        "Requires juggling heavy engineering coursework with self-directed project development."
+      ],
+      "milestones": [
+        {
+          "phase": "Current Commitment",
+          "timeframe": "Until JEE preparation ends; date not stated in the profile",
+          "focus": "Maintain basic coding practice within the 5-10 hours/week limit.",
+          "skills": ["Basic Python syntax"],
+          "projects": ["Simple algorithmic problem solutions"]
+        },
+        {
+          "phase": "Transition after JEE",
+          "timeframe": "Post-JEE until academic commencement",
+          "focus": "Transition to intensive software engineering foundations.",
+          "skills": ["Data structures", "Object-oriented programming"],
+          "projects": ["Version-controlled coding repository setup"]
+        },
+        {
+          "phase": "Academic Foundations",
+          "timeframe": "Degree Year 1",
+          "focus": "Mathematics and core programming proficiency.",
+          "skills": ["Linear algebra implementation", "SQL querying"],
+          "projects": ["Relational database design for a local dataset"]
+        },
+        {
+          "phase": "Applied ML Projects",
+          "timeframe": "Degree Year 2",
+          "focus": "Classical ML algorithms and evaluation metrics.",
+          "skills": ["Pandas data cleaning", "Scikit-learn classification", "Train/test split evaluation"],
+          "projects": ["Predictive model for classification of public survey data"]
+        },
+        {
+          "phase": "Relevant Experience",
+          "timeframe": "Degree Year 3",
+          "focus": "Internship and real-world system exposure.",
+          "skills": ["API integration", "Git workflows"],
+          "projects": ["Contributed code to an internship project involving data pipelines"]
+        },
+        {
+          "phase": "Target Role Preparation",
+          "timeframe": "Degree Year 4",
+          "focus": "Production-oriented engineering and portfolio refinement.",
+          "skills": ["Model serving with FastAPI", "Containerization with Docker", "Automated model testing"],
+          "projects": ["End-to-end ML service with automated unit tests and containerized deployment"]
+        }
+      ],
+      "internship_strategy": {
+        "readiness": "Student can clean raw data, train a scikit-learn model, and demonstrate performance with precision and recall metrics.",
+        "target_roles": ["Data Analyst Intern", "Python Developer Intern"],
+        "preparation": ["Build a portfolio of three distinct, documented ML experiments on GitHub"],
+        "application_stage": "Begin applying once the student can independently explain the bias-variance tradeoff and demonstrate a project using Scikit-Learn; this may occur around Year 2 depending on progress."
+      }
+    },
+    {
+      "path_id": "PATH_B",
+      "title": "B.Sc Mathematics Track",
+      "education": {
+        "degree": "B.Sc",
+        "branch": "Mathematics"
+      },
+      "timeline": "3 Years",
+      "why_it_fits": "Stronger mathematical focus allowing faster progression into theoretical ML; compare total cost per institution against the student's stated budget preference.",
+      "tradeoffs": [
+        "Lacks integrated software engineering training found in B.Tech.",
+        "Requires significant independent effort to learn industry-standard production tools."
+      ],
+      "milestones": [
+        {
+          "phase": "Current Commitment",
+          "timeframe": "Until JEE preparation ends; date not stated in the profile",
+          "focus": "Consistent coding habit maintenance.",
+          "skills": ["Python logic"],
+          "projects": ["Mathematical problem automation in Python"]
+        },
+        {
+          "phase": "Transition after JEE",
+          "timeframe": "Post-JEE until academic commencement",
+          "focus": "Bridge mathematical concepts to data handling.",
+          "skills": ["Numerical computation", "Probability basics"],
+          "projects": ["Statistical simulation scripts"]
+        },
+        {
+          "phase": "Theoretical & Algorithmic Foundations",
+          "timeframe": "Degree Year 1",
+          "focus": "Deep mathematical understanding of machine learning foundations.",
+          "skills": ["Calculus", "Probability theory", "NumPy implementation of math algorithms"],
+          "projects": ["Implemented linear regression from scratch using matrix algebra"]
+        },
+        {
+          "phase": "Internship Readiness & Experience",
+          "timeframe": "Degree Year 2",
+          "focus": "Applying theory to complex datasets.",
+          "skills": ["Statistical modeling", "Data visualization", "Scikit-learn tree-based models"],
+          "projects": ["Analysis of high-dimensional datasets using unsupervised learning techniques"]
+        },
+        {
+          "phase": "Relevant Experience",
+          "timeframe": "Degree Year 2-3",
+          "focus": "Building robust data systems in internships.",
+          "skills": ["SQL data extraction", "Model evaluation in production environments"],
+          "projects": ["Refactored internship code for performance and reproducibility"]
+        },
+        {
+          "phase": "Target Role Preparation",
+          "timeframe": "Degree Year 3",
+          "focus": "System design and production ML pipelines.",
+          "skills": ["REST API development", "Pipeline orchestration", "Model performance monitoring"],
+          "projects": ["Comprehensive portfolio of production-ready models with automated evaluation workflows"]
+        }
+      ],
+      "internship_strategy": {
+        "readiness": "Student can implement classic ML algorithms from scratch using only numerical libraries and evaluate them against library implementations.",
+        "target_roles": ["Research Intern", "Data Science Intern"],
+        "preparation": ["Write detailed documentation for mathematical implementations of ML algorithms"],
+        "application_stage": "Begin applying once the student can demonstrate custom implementation of core ML algorithms and a successful data project; this may occur around Year 2 depending on progress."
+      }
+    }
+  ]
+}
