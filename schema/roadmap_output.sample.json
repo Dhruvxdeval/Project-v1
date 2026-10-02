@@ -3,123 +3,123 @@
   "paths": [
     {
       "path_id": "PATH_A",
-      "title": "B.Tech Engineering Path",
+      "title": "B.Tech Computer Science Engineering",
       "education": {
         "degree": "B.Tech",
         "branch": "Computer Science"
       },
       "timeline": "4 Years",
-      "why_it_fits": "Structured academic environment providing foundational theory; compare total cost per institution against the student's stated budget preference.",
+      "why_it_fits": "Provides a comprehensive engineering foundation including systems, software, and mathematics; compare total cost per institution against the student's stated budget preference.",
       "tradeoffs": [
-        "Curriculum may delay specialized ML topics to later years.",
-        "Requires juggling heavy engineering coursework with self-directed project development."
+        "Curriculum may be rigid, leaving limited time for specialized AI/ML exploration in early years.",
+        "Requires balancing heavy academic requirements with self-directed project building."
       ],
       "milestones": [
         {
-          "phase": "Current Commitment",
+          "phase": "JEE Preparation",
           "timeframe": "Until JEE preparation ends; date not stated in the profile",
-          "focus": "Maintain basic coding practice within the 5-10 hours/week limit.",
-          "skills": ["Basic Python syntax"],
-          "projects": ["Simple algorithmic problem solutions"]
+          "focus": "Maintain basic programming consistency within the 5-10 hour weekly limit.",
+          "skills": ["Basic Python logic"],
+          "projects": ["Build a simple CLI-based calculator"]
         },
         {
           "phase": "Transition after JEE",
           "timeframe": "Post-JEE until academic commencement",
-          "focus": "Transition to intensive software engineering foundations.",
-          "skills": ["Data structures", "Object-oriented programming"],
-          "projects": ["Version-controlled coding repository setup"]
+          "focus": "Transition to systematic software engineering foundations.",
+          "skills": ["Data structures", "Version control basics"],
+          "projects": ["Build a personal git-tracked project repository"]
         },
         {
           "phase": "Academic Foundations",
           "timeframe": "Degree Year 1",
-          "focus": "Mathematics and core programming proficiency.",
-          "skills": ["Linear algebra implementation", "SQL querying"],
-          "projects": ["Relational database design for a local dataset"]
+          "focus": "Engineering mathematics and foundational programming.",
+          "skills": ["Linear algebra implementation", "SQL database design"],
+          "projects": ["Build a relational database for student records"]
         },
         {
           "phase": "Applied ML Projects",
           "timeframe": "Degree Year 2",
-          "focus": "Classical ML algorithms and evaluation metrics.",
-          "skills": ["Pandas data cleaning", "Scikit-learn classification", "Train/test split evaluation"],
-          "projects": ["Predictive model for classification of public survey data"]
+          "focus": "Classical machine learning and data evaluation.",
+          "skills": ["Pandas data cleaning", "Scikit-learn classification", "Model evaluation metrics"],
+          "projects": ["Build a classification model for a public census dataset"]
         },
         {
           "phase": "Relevant Experience",
           "timeframe": "Degree Year 3",
-          "focus": "Internship and real-world system exposure.",
-          "skills": ["API integration", "Git workflows"],
-          "projects": ["Contributed code to an internship project involving data pipelines"]
+          "focus": "Practical application in internship settings.",
+          "skills": ["Team development workflows", "SQL integration"],
+          "projects": ["Build a data pipeline module for an external dataset"]
         },
         {
           "phase": "Target Role Preparation",
           "timeframe": "Degree Year 4",
-          "focus": "Production-oriented engineering and portfolio refinement.",
-          "skills": ["Model serving with FastAPI", "Containerization with Docker", "Automated model testing"],
-          "projects": ["End-to-end ML service with automated unit tests and containerized deployment"]
+          "focus": "Production-oriented engineering and interview readiness.",
+          "skills": ["REST API development", "Containerization with Docker", "Unit testing"],
+          "projects": ["Build an end-to-end ML service with automated evaluation"]
         }
       ],
       "internship_strategy": {
-        "readiness": "Student can clean raw data, train a scikit-learn model, and demonstrate performance with precision and recall metrics.",
+        "readiness": "Student can independently clean a raw dataset, train a scikit-learn model, and document its performance using precision and recall metrics.",
         "target_roles": ["Data Analyst Intern", "Python Developer Intern"],
-        "preparation": ["Build a portfolio of three distinct, documented ML experiments on GitHub"],
-        "application_stage": "Begin applying once the student can independently explain the bias-variance tradeoff and demonstrate a project using Scikit-Learn; this may occur around Year 2 depending on progress."
+        "preparation": ["Build a portfolio of three distinct, documented ML projects", "Practice technical communication"],
+        "application_stage": "Begin applying once the student can independently explain basic model metrics and demonstrate a working project; this may occur around Year 2 depending on progress."
       }
     },
     {
       "path_id": "PATH_B",
-      "title": "B.Sc Mathematics Track",
+      "title": "B.Sc Mathematics and Computing",
       "education": {
         "degree": "B.Sc",
         "branch": "Mathematics"
       },
       "timeline": "3 Years",
-      "why_it_fits": "Stronger mathematical focus allowing faster progression into theoretical ML; compare total cost per institution against the student's stated budget preference.",
+      "why_it_fits": "Deep focus on mathematical reasoning and algorithm implementation provides a distinct foundation for AI; compare total cost per institution against the student's stated budget preference.",
       "tradeoffs": [
-        "Lacks integrated software engineering training found in B.Tech.",
-        "Requires significant independent effort to learn industry-standard production tools."
+        "Less emphasis on full-stack software engineering compared to B.Tech.",
+        "Requires significant self-directed effort to learn production deployment tools."
       ],
       "milestones": [
         {
-          "phase": "Current Commitment",
+          "phase": "JEE Preparation",
           "timeframe": "Until JEE preparation ends; date not stated in the profile",
-          "focus": "Consistent coding habit maintenance.",
-          "skills": ["Python logic"],
-          "projects": ["Mathematical problem automation in Python"]
+          "focus": "Consistent practice of mathematical problem solving and basic coding.",
+          "skills": ["Logical reasoning"],
+          "projects": ["Build a script to solve mathematical sequences"]
         },
         {
           "phase": "Transition after JEE",
           "timeframe": "Post-JEE until academic commencement",
-          "focus": "Bridge mathematical concepts to data handling.",
+          "focus": "Algorithmic foundation building.",
           "skills": ["Numerical computation", "Probability basics"],
-          "projects": ["Statistical simulation scripts"]
+          "projects": ["Build a simulation of a physical process"]
         },
         {
-          "phase": "Theoretical & Algorithmic Foundations",
+          "phase": "Mathematical & Algorithmic Core",
           "timeframe": "Degree Year 1",
           "focus": "Deep mathematical understanding of machine learning foundations.",
-          "skills": ["Calculus", "Probability theory", "NumPy implementation of math algorithms"],
-          "projects": ["Implemented linear regression from scratch using matrix algebra"]
+          "skills": ["Calculus", "Probability theory", "NumPy implementation"],
+          "projects": ["Build a linear regression model from scratch using matrix algebra"]
         },
         {
           "phase": "Internship Readiness & Experience",
           "timeframe": "Degree Year 2",
           "focus": "Applying theory to complex datasets.",
           "skills": ["Statistical modeling", "Data visualization", "Scikit-learn tree-based models"],
-          "projects": ["Analysis of high-dimensional datasets using unsupervised learning techniques"]
+          "projects": ["Build an analysis tool for high-dimensional datasets"]
         },
         {
           "phase": "Relevant Experience",
           "timeframe": "Degree Year 2-3",
-          "focus": "Building robust data systems in internships.",
-          "skills": ["SQL data extraction", "Model evaluation in production environments"],
-          "projects": ["Refactored internship code for performance and reproducibility"]
+          "focus": "Building robust data systems.",
+          "skills": ["Database interactions", "Model evaluation"],
+          "projects": ["Build a module for reproducible data preprocessing"]
         },
         {
           "phase": "Target Role Preparation",
           "timeframe": "Degree Year 3",
-          "focus": "System design and production ML pipelines.",
-          "skills": ["REST API development", "Pipeline orchestration", "Model performance monitoring"],
-          "projects": ["Comprehensive portfolio of production-ready models with automated evaluation workflows"]
+          "focus": "System design and production ML workflows.",
+          "skills": ["API development", "Pipeline orchestration", "Model performance monitoring"],
+          "projects": ["Build a portfolio of production-ready AI models with automated evaluation"]
         }
       ],
       "internship_strategy": {
